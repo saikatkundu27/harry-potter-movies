@@ -1,0 +1,21 @@
+<div class="outer-div">
+  <form [formGroup]="searchForm" class="filter-section">
+    <div class="filter-title">Filters</div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 title-filter">
+        <label for="title">Title</label>
+        <input type="text" id="title" formControlName="title" />
+      </div>
+      <div class="col-lg-4 col-md-3 col-sm-12 year-filter">
+        <label for="releaseYear">Release Year</label>
+        <input type="number" id="releaseYear" formControlName="releaseYear" />
+      </div>
+    </div>
+  </form>
+  <div class="search-results">
+    <app-movie-list-item
+      *ngFor="let movie of moviesList"
+      [movie]="movie"
+    ></app-movie-list-item>
+  </div>
+</div>

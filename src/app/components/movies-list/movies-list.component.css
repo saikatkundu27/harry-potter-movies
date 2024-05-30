@@ -1,0 +1,10 @@
+.filter-section {
+  padding: 10px 20px;
+}
+.filter-title {
+  font-weight: bold;
+}
+.title-filter,
+.year-filter {
+  margin: 5px;
+}

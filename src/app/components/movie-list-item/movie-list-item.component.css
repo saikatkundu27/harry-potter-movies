@@ -1,0 +1,17 @@
+.movie-item {
+  margin: 5px;
+}
+.movie-item span {
+  margin: 5px;
+}
+.movie-title {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.details-btn {
+  margin: 0;
+  margin-top: 15px;
+  float: right;
+  display: inline-block;
+}

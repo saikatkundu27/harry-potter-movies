@@ -1,0 +1,37 @@
+.movie-title,
+.movie-poster,
+.movie-summary,
+.details-table {
+  margin-top: 1.5rem;
+}
+.movie-title {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.back-btn {
+  margin: 0;
+}
+.back-btn i {
+  padding-right: 5px;
+}
+.movie-summary {
+  font-size: larger;
+}
+.details-title {
+  text-align: center;
+  font-size: x-large;
+}
+
+.details-table th,
+.details-table td {
+  text-align: right;
+  border: 0.2px solid grey;
+  border-bottom: 0px;
+}
+.details-table td {
+  text-align: left;
+  border-left: 0px;
+}
+tr:last-child {
+  border-bottom: 0.2px solid grey;
+}

@@ -1,0 +1,26 @@
+<ul *ngIf="movie">
+  <li>
+    <div class="row movie-item">
+      <div class="col-lg-10 col-md-10 col-sm-10">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <span class="movie-title"> {{ movie.title }}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <span>Release Date: {{ movie.release_date }}</span>
+            <span>Budget: {{ movie.budget | millionDollar }} </span>
+            <!--custom pipe to be written-->
+            <span>Duration: {{ movie.duration | movieDuration }} </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2">
+        <button class="details-btn" (click)="navigateToMovieDetail(movie.id)">
+          Details
+        </button>
+      </div>
+    </div>
+  </li>
+</ul>
