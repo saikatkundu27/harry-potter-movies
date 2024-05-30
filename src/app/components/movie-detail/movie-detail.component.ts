@@ -36,7 +36,7 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
       next: (response: HttpResponse<MovieDetail>) => {
         if (response.status == 200 && response.body) {
           this.movieDetails = response.body;
-          console.log(this.movieDetails);
+
         }
       },
       error: (err: any) => {
