@@ -6,11 +6,12 @@ import { MovieDetail } from '../../models/app.model';
 import { MillionDollarPipe } from '../../pipes/million-dollar.pipe';
 import { MovieDurationPipe } from '../../pipes/movie-duration.pipe';
 import { MovieApiService } from '../../services/movie-api.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-movie-detail',
   standalone: true,
-  imports: [MovieDurationPipe, MillionDollarPipe],
+  imports: [CommonModule,MovieDurationPipe, MillionDollarPipe],
   templateUrl: './movie-detail.component.html',
   styleUrl: './movie-detail.component.css',
 })
