@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   standalone: true,
 })
 export class MovieDurationPipe implements PipeTransform {
-  transform(duration: string, ...args: unknown[]): unknown {
+  transform(duration: string, ...args: unknown[]): string {
     let numericalDuration = Number(duration);
     if (!isNaN(numericalDuration)) {
       return `${Math.floor(numericalDuration / 60)}h ${
