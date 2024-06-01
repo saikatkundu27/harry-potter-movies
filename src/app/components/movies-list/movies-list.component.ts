@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import {  HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import {
   FormControl,
@@ -54,7 +54,7 @@ export class MoviesListComponent implements OnInit, OnDestroy {
           this.filteredMoviesList = data.body || [];
         }
       },
-      error: (err) => {
+      error: (err:HttpErrorResponse) => {
         console.log(err);
       },
     });

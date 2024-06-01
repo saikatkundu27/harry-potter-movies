@@ -1,4 +1,4 @@
-import { HttpResponse } from '@angular/common/http';
+import { HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { Component, inject, Input, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -40,7 +40,7 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
 
         }
       },
-      error: (err: any) => {
+      error: (err:HttpErrorResponse) => {
         console.log(err);
       },
     });
